@@ -24,25 +24,51 @@ Whether you're a developer, researcher, or business enthusiast, this repository 
 
 ## 🏭 Industry Table
 
-| Industry            | Description                                                                | Example Use Case                   |
-|----------------------|----------------------------------------------------------------------------|-------------------------------------|
-| **Healthcare**       | AI agents for medical diagnosis, patient care, and health monitoring.     | AI Health Assistant                |
-| **Finance**          | AI for trading, fraud detection, and automated financial advising.         | Automated Trading Bot              |
-| **Education**        | Personalized learning experiences and virtual tutors powered by AI.       | Virtual AI Tutor                   |
-| **Customer Service** | AI chatbots and virtual assistants to handle customer queries efficiently.| 24/7 AI Chatbot                    |
-| **Retail**           | AI for personalized shopping, inventory management, and recommendations.  | Product Recommendation Agent       |
+| Industry             | Description                                                                                     | Example Use Case                           |
+|-----------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------|
+| **Healthcare**        | AI agents for medical diagnosis, patient care, and health monitoring.                          | AI Health Assistant                        |
+| **Finance**           | AI for trading, fraud detection, and automated financial advising.                              | Automated Trading Bot                      |
+| **Education**         | Personalized learning experiences and virtual tutors powered by AI.                            | Virtual AI Tutor                           |
+| **Customer Service**  | AI chatbots and virtual assistants to handle customer queries efficiently.                      | 24/7 AI Chatbot                            |
+| **Retail**            | AI for personalized shopping, inventory management, and recommendations.                       | Product Recommendation Agent               |
+| **Transportation**    | AI agents for route optimization, autonomous driving, and logistics.                           | Self-Driving Delivery Agent                |
+| **Manufacturing**     | AI agents for predictive maintenance, quality assurance, and robotics.                         | Factory Process Monitoring Agent           |
+| **Real Estate**       | AI-powered assistants for property search, pricing analysis, and virtual tours.                | Property Pricing Agent                     |
+| **Agriculture**       | AI for precision farming, crop monitoring, and yield prediction.                               | Smart Farming Assistant                    |
+| **Energy**            | AI agents for energy grid management, renewable energy optimization, and consumption analysis.  | Energy Demand Forecasting Agent            |
+| **Entertainment**     | AI for content creation, recommendation systems, and personalized media experiences.           | Content Personalization Agent              |
+| **Legal**             | AI-powered tools for legal research, document review, and contract analysis.                   | Legal Document Review Assistant            |
+| **Human Resources**   | AI for talent acquisition, employee training, and workforce management.                        | Recruitment Recommendation Agent           |
+| **Hospitality**       | AI agents for booking management, personalized travel suggestions, and customer experience.     | Virtual Travel Assistant                   |
+| **Gaming**            | AI for NPC behavior, game design, and real-time player assistance.                             | AI Game Companion Agent                    |
+| **Cybersecurity**     | AI agents for threat detection, incident response, and vulnerability management.                | Real-Time Threat Detection Agent           |
+| **E-commerce**        | AI for dynamic pricing, product recommendations, and customer insights.                        | E-commerce Personal Shopper Agent          |
+| **Supply Chain**      | AI for inventory optimization, demand forecasting, and route planning.                         | Logistics Optimization Agent               |
 
 ---
 
 ## 🧩 Use Case Table
 
-| Use Case                          | Industry        | Description                                             | Code Link                                                   |
-|-----------------------------------|-----------------|---------------------------------------------------------|------------------------------------------------------------|
-| **AI Health Assistant**           | Healthcare      | Diagnoses and monitors diseases using patient data.     | [GitHub Repo](https://github.com/health-ai)                |
-| **Automated Trading Bot**         | Finance         | Automates stock trading with real-time market analysis. | [GitHub Repo](https://github.com/finance-ai)               |
-| **Virtual AI Tutor**              | Education       | Provides personalized education tailored to users.      | [GitHub Repo](https://github.com/education-ai)             |
-| **24/7 AI Chatbot**               | Customer Service| Handles customer queries around the clock.              | [GitHub Repo](https://github.com/chatbot-ai)               |
-| **Product Recommendation Agent**  | Retail          | Suggests products based on user preferences and history.| [GitHub Repo](https://github.com/retail-recommendation-ai) |
+| Use Case                          | Industry            | Description                                             | Code Link                                                   |
+|-----------------------------------|---------------------|---------------------------------------------------------|------------------------------------------------------------|
+| **AI Health Assistant**           | Healthcare          | Diagnoses and monitors diseases using patient data.     | [GitHub Repo](https://github.com/health-ai)                |
+| **Automated Trading Bot**         | Finance             | Automates stock trading with real-time market analysis. | [GitHub Repo](https://github.com/finance-ai)               |
+| **Virtual AI Tutor**              | Education           | Provides personalized education tailored to users.      | [GitHub Repo](https://github.com/education-ai)             |
+| **24/7 AI Chatbot**               | Customer Service    | Handles customer queries around the clock.              | [GitHub Repo](https://github.com/chatbot-ai)               |
+| **Product Recommendation Agent**  | Retail              | Suggests products based on user preferences and history.| [GitHub Repo](https://github.com/retail-recommendation-ai) |
+| **Self-Driving Delivery Agent**   | Transportation      | Optimizes routes and autonomously delivers packages.    | [GitHub Repo](https://github.com/transport-ai)             |
+| **Factory Process Monitoring Agent** | Manufacturing    | Monitors production lines and ensures quality control.  | [GitHub Repo](https://github.com/manufacturing-ai)         |
+| **Property Pricing Agent**        | Real Estate         | Analyzes market trends to determine property prices.    | [GitHub Repo](https://github.com/realestate-ai)            |
+| **Smart Farming Assistant**       | Agriculture         | Provides insights on crop health and yield predictions. | [GitHub Repo](https://github.com/agriculture-ai)           |
+| **Energy Demand Forecasting Agent** | Energy            | Predicts energy usage to optimize grid management.      | [GitHub Repo](https://github.com/energy-ai)                |
+| **Content Personalization Agent** | Entertainment       | Recommends personalized media based on preferences.     | [GitHub Repo](https://github.com/entertainment-ai)         |
+| **Legal Document Review Assistant** | Legal             | Automates document review and highlights key clauses.   | [GitHub Repo](https://github.com/legal-ai)                 |
+| **Recruitment Recommendation Agent** | Human Resources  | Suggests best-fit candidates for job openings.          | [GitHub Repo](https://github.com/hr-ai)                   |
+| **Virtual Travel Assistant**      | Hospitality         | Plans travel itineraries based on preferences.          | [GitHub Repo](https://github.com/travel-ai)                |
+| **AI Game Companion Agent**       | Gaming             | Enhances player experience with real-time assistance.   | [GitHub Repo](https://github.com/gaming-ai)                |
+| **Real-Time Threat Detection Agent** | Cybersecurity    | Identifies potential threats and mitigates attacks.     | [GitHub Repo](https://github.com/cybersecurity-ai)         |
+| **E-commerce Personal Shopper Agent** | E-commerce      | Helps customers find products they’ll love.             | [GitHub Repo](https://github.com/ecommerce-ai)             |
+| **Logistics Optimization Agent**  | Supply Chain        | Plans efficient delivery routes and manages inventory.  | [GitHub Repo](https://github.com/supplychain-ai)           |
 
 ---
 
@@ -65,4 +91,3 @@ This repository is licensed under the MIT License. See the [LICENSE](LICENSE) fi
 
 ## 🚀 Let's Build Together!
 Feel free to share this repository with your network and star ⭐ it if you find it useful. Let’s collaborate to create the ultimate resource for AI agent use cases!
-
