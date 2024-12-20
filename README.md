@@ -60,15 +60,15 @@ Whether you're a developer, researcher, or business enthusiast, this repository 
 | **Factory Process Monitoring Agent** | Manufacturing    | Monitors production lines and ensures quality control.  | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/yuchenxia/llm4ias) |
 | **Property Pricing Agent**        | Real Estate         | Analyzes market trends to determine property prices.    | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/AleksNeStu/ai-real-estate-assistant) |
 | **Smart Farming Assistant**       | Agriculture         | Provides insights on crop health and yield predictions. | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/mohammed97ashraf/LLM_Agri_Bot) |
-| **Energy Demand Forecasting Agent** | Energy            | Predicts energy usage to optimize grid management.      | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/energy-ai) |
-| **Content Personalization Agent** | Entertainment       | Recommends personalized media based on preferences.     | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/entertainment-ai) |
-| **Legal Document Review Assistant** | Legal             | Automates document review and highlights key clauses.   | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/legal-ai) |
-| **Recruitment Recommendation Agent** | Human Resources  | Suggests best-fit candidates for job openings.          | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/hr-ai) |
-| **Virtual Travel Assistant**      | Hospitality         | Plans travel itineraries based on preferences.          | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/travel-ai) |
-| **AI Game Companion Agent**       | Gaming             | Enhances player experience with real-time assistance.   | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/gaming-ai) |
-| **Real-Time Threat Detection Agent** | Cybersecurity    | Identifies potential threats and mitigates attacks.     | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/cybersecurity-ai) |
-| **E-commerce Personal Shopper Agent** | E-commerce      | Helps customers find products they’ll love.             | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/ecommerce-ai) |
-| **Logistics Optimization Agent**  | Supply Chain        | Plans efficient delivery routes and manages inventory.  | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/supplychain-ai) |
+| **Energy Demand Forecasting Agent** | Energy            | Predicts energy usage to optimize grid management.      | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/yecchen/MIRAI) |
+| **Content Personalization Agent** | Entertainment       | Recommends personalized media based on preferences.     | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/crosleythomas/MirrorGPT) |
+| **Legal Document Review Assistant** | Legal             | Automates document review and highlights key clauses.   | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/firica/legalai) |
+| **Recruitment Recommendation Agent** | Human Resources  | Suggests best-fit candidates for job openings.          | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/sentient-engineering/jobber) |
+| **Virtual Travel Assistant**      | Hospitality         | Plans travel itineraries based on preferences.          | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/nirbar1985/ai-travel-agent) |
+| **AI Game Companion Agent**       | Gaming             | Enhances player experience with real-time assistance.   | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/onjas-buidl/LLM-agent-game) |
+| **Real-Time Threat Detection Agent** | Cybersecurity    | Identifies potential threats and mitigates attacks.     | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/NVISOsecurity/cyber-security-llm-agents) |
+| **E-commerce Personal Shopper Agent** | E-commerce      | Helps customers find products they’ll love.             | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/Hoanganhvu123/ShoppingGPT) |
+| **Logistics Optimization Agent**  | Supply Chain        | Plans efficient delivery routes and manages inventory.  | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/microsoft/OptiGuide) |
 
 ---
 
