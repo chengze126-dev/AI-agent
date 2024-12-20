@@ -51,24 +51,24 @@ Whether you're a developer, researcher, or business enthusiast, this repository 
 
 | Use Case                          | Industry            | Description                                             | Code Link                                                   |
 |-----------------------------------|---------------------|---------------------------------------------------------|------------------------------------------------------------|
-| **AI Health Assistant**           | Healthcare          | Diagnoses and monitors diseases using patient data.     | [GitHub Repo](https://github.com/ahmadvh/AI-Agents-for-Medical-Diagnostics.git)                |
-| **Automated Trading Bot**         | Finance             | Automates stock trading with real-time market analysis. | [GitHub Repo](https://github.com/MingyuJ666/Stockagent.git)               |
-| **Virtual AI Tutor**              | Education           | Provides personalized education tailored to users.      | [GitHub Repo](https://github.com/hqanhh/EduGPT.git)             |
-| **24/7 AI Chatbot**               | Customer Service    | Handles customer queries around the clock.              | [GitHub Repo](https://github.com/NirDiamant/GenAI_Agents/blob/main/all_agents_tutorials/customer_support_agent_langgraph.ipynb)               |
-| **Product Recommendation Agent**  | Retail              | Suggests products based on user preferences and history.| [GitHub Repo](https://github.com/microsoft/RecAI) |
-| **Self-Driving Delivery Agent**   | Transportation      | Optimizes routes and autonomously delivers packages.    | [GitHub Repo](https://github.com/sled-group/driVLMe)             |
-| **Factory Process Monitoring Agent** | Manufacturing    | Monitors production lines and ensures quality control.  | [GitHub Repo](https://github.com/yuchenxia/llm4ias)         |
-| **Property Pricing Agent**        | Real Estate         | Analyzes market trends to determine property prices.    | [GitHub Repo](https://github.com/AleksNeStu/ai-real-estate-assistant)            |
-| **Smart Farming Assistant**       | Agriculture         | Provides insights on crop health and yield predictions. | [GitHub Repo](https://github.com/mohammed97ashraf/LLM_Agri_Bot)           |
-| **Energy Demand Forecasting Agent** | Energy            | Predicts energy usage to optimize grid management.      | [GitHub Repo](https://github.com/energy-ai)                |
-| **Content Personalization Agent** | Entertainment       | Recommends personalized media based on preferences.     | [GitHub Repo](https://github.com/entertainment-ai)         |
-| **Legal Document Review Assistant** | Legal             | Automates document review and highlights key clauses.   | [GitHub Repo](https://github.com/legal-ai)                 |
-| **Recruitment Recommendation Agent** | Human Resources  | Suggests best-fit candidates for job openings.          | [GitHub Repo](https://github.com/hr-ai)                   |
-| **Virtual Travel Assistant**      | Hospitality         | Plans travel itineraries based on preferences.          | [GitHub Repo](https://github.com/travel-ai)                |
-| **AI Game Companion Agent**       | Gaming             | Enhances player experience with real-time assistance.   | [GitHub Repo](https://github.com/gaming-ai)                |
-| **Real-Time Threat Detection Agent** | Cybersecurity    | Identifies potential threats and mitigates attacks.     | [GitHub Repo](https://github.com/cybersecurity-ai)         |
-| **E-commerce Personal Shopper Agent** | E-commerce      | Helps customers find products they’ll love.             | [GitHub Repo](https://github.com/ecommerce-ai)             |
-| **Logistics Optimization Agent**  | Supply Chain        | Plans efficient delivery routes and manages inventory.  | [GitHub Repo](https://github.com/supplychain-ai)           |
+| **AI Health Assistant**           | Healthcare          | Diagnoses and monitors diseases using patient data.     | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/ahmadvh/AI-Agents-for-Medical-Diagnostics.git) |
+| **Automated Trading Bot**         | Finance             | Automates stock trading with real-time market analysis. | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/MingyuJ666/Stockagent.git) |
+| **Virtual AI Tutor**              | Education           | Provides personalized education tailored to users.      | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/hqanhh/EduGPT.git) |
+| **24/7 AI Chatbot**               | Customer Service    | Handles customer queries around the clock.              | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/NirDiamant/GenAI_Agents/blob/main/all_agents_tutorials/customer_support_agent_langgraph.ipynb) |
+| **Product Recommendation Agent**  | Retail              | Suggests products based on user preferences and history.| [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/microsoft/RecAI) |
+| **Self-Driving Delivery Agent**   | Transportation      | Optimizes routes and autonomously delivers packages.    | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/sled-group/driVLMe) |
+| **Factory Process Monitoring Agent** | Manufacturing    | Monitors production lines and ensures quality control.  | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/yuchenxia/llm4ias) |
+| **Property Pricing Agent**        | Real Estate         | Analyzes market trends to determine property prices.    | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/AleksNeStu/ai-real-estate-assistant) |
+| **Smart Farming Assistant**       | Agriculture         | Provides insights on crop health and yield predictions. | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/mohammed97ashraf/LLM_Agri_Bot) |
+| **Energy Demand Forecasting Agent** | Energy            | Predicts energy usage to optimize grid management.      | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/energy-ai) |
+| **Content Personalization Agent** | Entertainment       | Recommends personalized media based on preferences.     | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/entertainment-ai) |
+| **Legal Document Review Assistant** | Legal             | Automates document review and highlights key clauses.   | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/legal-ai) |
+| **Recruitment Recommendation Agent** | Human Resources  | Suggests best-fit candidates for job openings.          | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/hr-ai) |
+| **Virtual Travel Assistant**      | Hospitality         | Plans travel itineraries based on preferences.          | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/travel-ai) |
+| **AI Game Companion Agent**       | Gaming             | Enhances player experience with real-time assistance.   | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/gaming-ai) |
+| **Real-Time Threat Detection Agent** | Cybersecurity    | Identifies potential threats and mitigates attacks.     | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/cybersecurity-ai) |
+| **E-commerce Personal Shopper Agent** | E-commerce      | Helps customers find products they’ll love.             | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/ecommerce-ai) |
+| **Logistics Optimization Agent**  | Supply Chain        | Plans efficient delivery routes and manages inventory.  | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/supplychain-ai) |
 
 ---
 
