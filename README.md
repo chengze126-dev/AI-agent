@@ -157,6 +157,15 @@ Whether you're a developer, researcher, or business enthusiast, this repository 
 | 🕷️ Web Crawling: Crawl Entire Domain with Spider API                   | 🌐 Data Gathering              | Explains how to crawl entire domains using the Spider API.                                   | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_webcrawling_with_spider)                 |
 | 💻 Write a Software App Task by Task with Specially Designed Functions | 💻 Software Development        | Builds a software application step-by-step using designed functions.                         | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_function_call_code_writing.ipynb)        |
 
+> **Human Development**
+
+| Use Case                                                         | Industry                | Description                                                                                       | Links                                                                                                                                                              |
+|:-----------------------------------------------------------------|:------------------------|:--------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 💬 Simple Example in ChatGPT Style                               | 🧠 Conversational AI    | Demonstrates a simple conversational example in the style of ChatGPT.                             | [![Example](https://img.shields.io/badge/View-Example-blue?logo=openai)](https://github.com/microsoft/autogen/blob/0.2/samples/simple_chat.py)                     |
+| 🤖 Auto Code Generation, Execution, Debugging and Human Feedback | 💻 Software Development | Showcases code generation, execution, debugging with human feedback integrated into the workflow. | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_human_feedback.ipynb) |
+| 👥 Automated Task Solving with GPT-4 + Multiple Human Users      | 🤝 Collaboration        | Enables task solving with multiple human users collaborating with GPT-4.                          | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_two_users.ipynb)      |
+| 🔄 Agent Chat with Async Human Inputs                            | 🧠 Conversational AI    | Supports asynchronous human input during agent conversations.                                     | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/Async_human_input.ipynb)        |
+
 ---
 
 ## 🤝 Contributing
