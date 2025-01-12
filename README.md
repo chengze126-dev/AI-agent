@@ -9,9 +9,9 @@ A curated collection of AI agent use cases across industries, showcasing practic
 ## 📋 Table of Contents
 
 - [Introduction](#introduction)
-- [Industry Table](#industry-table)
-- [Use Case Table](#use-case-table)
 - [Industry Usecase](#-industry-usecase-mindmap)
+- [Use Case Table](#use-case-table)
+- [Framework Wise UseCase](#framework-wise-usecases)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -58,7 +58,7 @@ Whether you're a developer, researcher, or business enthusiast, this repository 
 | **Logistics Optimization Agent**      | Supply Chain     | Plans efficient delivery routes and manages inventory.   | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/microsoft/OptiGuide)                                                                           |
 
 
-Framework wise Usecases
+## Framework wise Usecases
 ---
 **Framework Name**: **CrewAI**
 
