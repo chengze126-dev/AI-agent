@@ -11,7 +11,7 @@ A curated collection of AI agent use cases across industries, showcasing practic
 - [Introduction](#introduction)
 - [Industry Table](#industry-table)
 - [Use Case Table](#use-case-table)
-- []
+- [Industry Usecase](#-industry-usecase-mindmap)
 - [Contributing](#contributing)
 - [License](#license)
 
