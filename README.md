@@ -12,6 +12,8 @@ A curated collection of AI agent use cases across industries, showcasing practic
 - [Industry Usecase](#-industry-usecase-mindmap)
 - [Use Case Table](#use-case-table)
 - [Framework Wise UseCase](#framework-wise-usecases)
+    - [CrewAI UseCase](#framework-name-crewai)
+    - [AutoGen UseCase](#framework-name-autogen)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -60,7 +62,7 @@ Whether you're a developer, researcher, or business enthusiast, this repository 
 
 ## Framework wise Usecases
 ---
-**Framework Name**: **CrewAI**
+### **Framework Name**: **CrewAI**
 
 | Use Case                       | Industry              | Description                                                                                   | GitHub Link                                                                 |
 |--------------------------------|-----------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -86,6 +88,39 @@ Whether you're a developer, researcher, or business enthusiast, this repository 
 | 🗂️ Prep for a Meeting          | 🛠️ Productivity        | Assists in preparing for meetings by organizing materials and setting agendas.                 | [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/crewAIInc/crewAI-examples/tree/main/prep-for-a-meeting) |
 | 🛠️Starter Template            | 🛠️ Development         | Provides a starter template for new projects to streamline the setup process.                  | [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/crewAIInc/crewAI-examples/tree/main/starter_template) |
 | 🔗CrewAI + LangGraph Integration| 🤖 AI Integration    | Demonstrates integration between CrewAI and LangGraph for enhanced workflow automation.        
+
+### **Framework Name**: **Autogen**
+
+> **Code Generation, Execution, and Debugging**
+
+| Use Case                                                                            | Industry                | Description                                                                       | Links                                                                                                                                                                              |
+|------------------------------------------------------------------------------------|------------------------|----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 🤖 Automated Task Solving with Code Generation, Execution & Debugging               | 💻 Software Development | Demonstrates automated task-solving by generating, executing, and debugging code. | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_auto_feedback_from_code_execution)    |
+| 🧑‍💻 Automated Code Generation and Question Answering with Retrieval Augmented Agents | 💻 Software Development | Generates code and answers questions using retrieval-augmented methods.           | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_RetrieveChat)                        |
+| 🧠 Automated Code Generation and Question Answering with Qdrant-based Retrieval     | 💻 Software Development | Utilizes Qdrant for enhanced retrieval-augmented agent performance.               | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_RetrieveChat_qdrant)                 |
+       
+
+> **Multi-Agent Collaboration (>3 Agents)**                                                                       
+                                                    
+| Use Case                                                                 | Industry                  | Description                                                         | Links                                                                                                                           |
+|:-------------------------------------------------------------------------|:--------------------------|:--------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------|
+| 🤝 Automated Task Solving by Group Chat (3 members, 1 manager)           | 🤝 Collaboration          | Demonstrates group task-solving via multi-agent collaboration.      | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_groupchat)                  |
+| 📊 Automated Data Visualization by Group Chat (3 members, 1 manager)     | 📊 Data Analysis          | Uses multi-agent collaboration to create data visualizations.       | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_groupchat_vis)              |
+| 🧩 Automated Complex Task Solving by Group Chat (6 members, 1 manager)   | 🤝 Collaboration          | Solves complex tasks collaboratively with a larger group of agents. | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_groupchat_research)         |
+| 🧑‍💻 Automated Task Solving with Coding & Planning Agents                  | 🛠️ Planning & Development | Combines coding and planning agents for solving tasks effectively.  | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_planning.ipynb)             |
+| 📐 Automated Task Solving with Transition Paths Specified in a Graph     | 🤝 Collaboration          | Uses predefined transition paths in a graph for solving tasks.      | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://microsoft.github.io/autogen/docs/notebooks/agentchat_groupchat_finite_state_machine) |
+| 🧠 Running a Group Chat as an Inner-Monologue via the SocietyOfMindAgent | 🧠 Cognitive Sciences     | Simulates inner-monologue for problem-solving using group chats.    | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_society_of_mind)            |
+| 🔧 Running a Group Chat with Custom Speaker Selection Function           | 🤝 Collaboration          | Implements a custom function for speaker selection in group chats.  | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_groupchat_customized)       |
+
+
+> **Sequential Multi-Agent Chats**
+
+| Use Case                                                                           | Industry               | Description                                                                      | Links                                                                                                                   |
+|:-----------------------------------------------------------------------------------|:-----------------------|:---------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------|
+| 🔄 Solving Multiple Tasks in a Sequence of Chats Initiated by a Single Agent       | 🔄 Workflow Automation | Automates sequential task-solving with a single initiating agent.                | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_multi_task_chats)       |
+| ⏳ Async-solving Multiple Tasks in a Sequence of Chats Initiated by a Single Agent | 🔄 Workflow Automation | Handles asynchronous task-solving in a sequence of chats initiated by one agent. | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_multi_task_async_chats) |
+| 🤝 Solving Multiple Tasks in a Sequence of Chats Initiated by Different Agents     | 🔄 Workflow Automation | Facilitates sequential task-solving with different agents initiating each chat.  | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchats_sequential_chats)      |
+
 
 ---
 
