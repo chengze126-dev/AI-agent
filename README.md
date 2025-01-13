@@ -166,6 +166,81 @@ Whether you're a developer, researcher, or business enthusiast, this repository 
 | 👥 Automated Task Solving with GPT-4 + Multiple Human Users      | 🤝 Collaboration        | Enables task solving with multiple human users collaborating with GPT-4.                          | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_two_users.ipynb)      |
 | 🔄 Agent Chat with Async Human Inputs                            | 🧠 Conversational AI    | Supports asynchronous human input during agent conversations.                                     | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/Async_human_input.ipynb)        |
 
+> **Agent Teaching and Learning**
+
+| Use Case                                                             | Industry                    | Description                                                                              | Links                                                                                                                                                                        |
+|:---------------------------------------------------------------------|:----------------------------|:-----------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 📘 Teach Agents New Skills & Reuse via Automated Chat                | 🎓 Education & Training     | Demonstrates teaching new skills to agents and enabling their reuse in automated chats.  | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_teaching)                       |
+| 🧠 Teach Agents New Facts, User Preferences and Skills Beyond Coding | 🎓 Education & Training     | Shows how to teach agents new facts, user preferences, and non-coding skills.            | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_teachability)                   |
+| 🤖 Teach OpenAI Assistants Through GPTAssistantAgent                 | 💻 AI Assistant Development | Illustrates how to enhance OpenAI assistants' capabilities using GPTAssistantAgent.      | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_teachable_oai_assistants.ipynb) |
+| 🔄 Agent Optimizer: Train Agents in an Agentic Way                   | 🛠️ Optimization             | Explains how to train agents effectively in an agentic manner using the Agent Optimizer. | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_agentoptimizer.ipynb)           |
+
+> **Multi-Agent Chat with OpenAI Assistants in the loop**
+
+| Use Case                                                  | Industry                 | Description                                                                   | Links                                                                                                                                                                             |
+|:----------------------------------------------------------|:-------------------------|:------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 🌟 Hello-World Chat with OpenAI Assistant in AutoGen      | 🤖 Conversational AI     | A basic example of chatting with OpenAI Assistant using AutoGen.              | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_oai_assistant_twoagents_basic.ipynb) |
+| 🔧 Chat with OpenAI Assistant using Function Call         | 🔧 Development Tools     | Illustrates how to use function calls with OpenAI Assistant in chats.         | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_oai_assistant_function_call.ipynb)   |
+| 🧠 Chat with OpenAI Assistant with Code Interpreter       | 💻 Software Development  | Demonstrates the use of OpenAI Assistant as a code interpreter in chats.      | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_oai_code_interpreter.ipynb)          |
+| 🔍 Chat with OpenAI Assistant with Retrieval Augmentation | 📚 Information Retrieval | Enables retrieval-augmented conversations with OpenAI Assistant.              | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_oai_assistant_retrieval.ipynb)       |
+| 🤝 OpenAI Assistant in a Group Chat                       | 🤝 Collaboration         | Shows how OpenAI Assistant can collaborate with other agents in a group chat. | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_oai_assistant_groupchat.ipynb)       |
+| 🛠️ GPTAssistantAgent based Multi-Agent Tool Use           | 🔧 Development Tools     | Explains how to use GPTAssistantAgent for multi-agent tool usage.             | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/gpt_assistant_agent_function_call.ipynb)       |
+
+> **Non-OpenAI Models**
+
+| Use Case                                        | Industry   | Description                                                       | Links                                                                                                                                                                      |
+|:------------------------------------------------|:-----------|:------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ♟️ Conversational Chess using Non-OpenAI Models | 🎮 Gaming  | Explores conversational chess implemented with non-OpenAI models. | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_nested_chats_chess_altmodels) |
+
+
+> **Multimodal Agent**
+
+| Use Case                                       | Industry            | Description                                                                       | Links                                                                                                                                                               |
+|:-----------------------------------------------|:--------------------|:----------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 🎨 Multimodal Agent Chat with DALLE and GPT-4V | 🖼️ Multimedia AI    | Combines DALLE and GPT-4V for multimodal agent communication.                     | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_dalle_and_gpt4v.ipynb) |
+| 🖌️ Multimodal Agent Chat with Llava            | 📷 Image Processing | Uses Llava for enabling multimodal agent conversations with image processing.     | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_lmm_llava.ipynb)       |
+| 🖼️ Multimodal Agent Chat with GPT-4V           | 🖼️ Multimedia AI    | Leverages GPT-4V for visual and conversational interactions in multimodal agents. | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_lmm_gpt-4v.ipynb)      |
+
+
+> **Long Context Handling**
+
+| Use Case                                 | Industry         | Description                                                                        | Links                                                                                                                                                            |
+|:-----------------------------------------|:-----------------|:-----------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 📜 Long Context Handling as A Capability | 🧠 AI Capability | Demonstrates techniques for handling long context effectively within AI workflows. | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_transform_messages) |
+
+
+> **Evaluation and Assessment**
+
+| Use Case                                                                             | Industry                  | Description                                                                                  | Links                                                                                                                                                       |
+|:-------------------------------------------------------------------------------------|:--------------------------|:---------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 📊 AgentEval: A Multi-Agent System for Assessing Utility of LLM-Powered Applications | 📈 Performance Evaluation | Introduces AgentEval for evaluating and assessing the performance of LLM-based applications. | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/agenteval_cq_math.ipynb) |
+
+
+> **Automatic Agent Building**
+
+| Use Case                                                     | Industry          | Description                                                                           | Links                                                                                                                                                             |
+|:-------------------------------------------------------------|:------------------|:--------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 🏗️ Automatically Build Multi-agent System with AgentBuilder  | 🤖 AI Development | Explains how to automatically build multi-agent systems using the AgentBuilder tool.  | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/autobuild_basic.ipynb)         |
+| 📚 Automatically Build Multi-agent System from Agent Library | 🤖 AI Development | Shows how to construct multi-agent systems by leveraging a pre-defined agent library. | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/autobuild_agent_library.ipynb) |
+
+
+> **Observability** 
+
+| Use Case                                                          | Industry                  | Description                                                                          | Links                                                                                                                                                        |
+|:------------------------------------------------------------------|:--------------------------|:-------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 📊 Track LLM Calls, Tool Usage, Actions and Errors using AgentOps | 📈 Monitoring & Analytics | Demonstrates how to monitor LLM interactions, tool usage, and errors using AgentOps. | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_agentops.ipynb) |
+
+
+> **Enhanced Inferences**
+
+| Use Case                                                             | Industry           | Description                                                                                | Links                                                                                                                                                                             |
+|:---------------------------------------------------------------------|:-------------------|:-------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 🔗 API Unification                                                   | 🔧 API Management  | Explains how to unify API usage with documentation and code examples.                      | [![Documentation](https://img.shields.io/badge/View-Documentation-blue?logo=readthedocs)](https://microsoft.github.io/autogen/docs/Use-Cases/enhanced_inference/#api-unification) |
+| ⚙️ Utility Functions to Help Managing API Configurations Effectively | 🔧 API Management  | Demonstrates utility functions to manage API configurations more effectively.              | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://microsoft.github.io/autogen/0.2/docs/topics/llm_configuration)                                |
+| 💰 Cost Calculation                                                  | 📈 Cost Management | Introduces methods for tracking token usage and estimating costs for LLM interactions.     | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_cost_token_tracking.ipynb)           |
+| ⚡ Optimize for Code Generation                                      | 📊 Optimization    | Highlights cost-effective optimization techniques for improving code generation with LLMs. | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/oai_completion.ipynb)                          |
+| 📐 Optimize for Math                                                 | 📊 Optimization    | Explains techniques to optimize LLM performance for solving mathematical problems.         | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/oai_chatgpt_gpt4.ipynb)                        |
+
 ---
 
 ## 🤝 Contributing
