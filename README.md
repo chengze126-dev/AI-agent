@@ -1,4 +1,4 @@
-# 🌟 Awesome AI Agent UseCases
+# 🌟 500+ AI Agent Projects / UseCases
 
 ![img](images/AIAgentUseCase.jpg)
 
