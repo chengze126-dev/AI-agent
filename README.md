@@ -32,7 +32,7 @@ Whether you're a developer, researcher, or business enthusiast, this repository 
 
 ## 🏭 Industry UseCase MindMap
 
-![](images/industry_usecase.png)
+![](images/industry_usecase1.png)
 
 ---
 
