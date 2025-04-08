@@ -1,4 +1,5 @@
 # 🌟 500+ AI Agent Projects / UseCases
+[![500-AI-Agents-Projects - UseCase](https://img.shields.io/badge/500--AI--Agents--Projects-UseCase-2ea44f?logo=https%3A%2F%2Fstatic-00.iconduck.com%2Fassets.00%2Frobot-emoji-2048x2044-kay057lt.png&logoColor=2ea44f)](https://github.com/ashishpatel26/500-AI-Agents-Projects)
 
 ![img](images/AIAgentUseCase.jpg)
 
@@ -14,6 +15,7 @@ A curated collection of AI agent use cases across industries, showcasing practic
 - [Framework Wise UseCase](#framework-wise-usecases)
   - [CrewAI UseCase](#framework-name-crewai)
   - [AutoGen UseCase](#framework-name-autogen)
+  - [Agno UseCase](#framework-name-agno)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -234,6 +236,12 @@ Whether you're a developer, researcher, or business enthusiast, this repository 
 | ⚡ Optimize for Code Generation                                      | 📊 Optimization    | Highlights cost-effective optimization techniques for improving code generation with LLMs. | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/oai_completion.ipynb)                          |
 | 📐 Optimize for Math                                                 | 📊 Optimization    | Explains techniques to optimize LLM performance for solving mathematical problems.         | [![Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://github.com/microsoft/autogen/blob/0.2/notebook/oai_chatgpt_gpt4.ipynb)                        |
 
+### **Framework Name**: **Agno**
+> **UseCase**
+
+| Use Case                                 | Industry         | Description                                                                        | Notebook                                                                                                                                                         |
+| :--------------------------------------- | :--------------- | :--------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 🤖 Support Agent | 💻 Software Development / AI / Framework Support | The Agno Support Agent helps developers with the Agno framework by providing real-time answers, explanations, and code examples. | [![AI Agent Code - Python](https://img.shields.io/static/v1?label=AI+Agent+Code&message=Python&color=%23244cd1)](https://github.com/agno-agi/agno/blob/main/cookbook/examples/agents/agno_support_agent.py) |
 ---
 
 ## 🤝 Contributing
