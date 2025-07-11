@@ -63,6 +63,8 @@ Whether you're a developer, researcher, or business enthusiast, this repository 
 | **Real-Time Threat Detection Agent**  | Cybersecurity    | Identifies potential threats and mitigates attacks.      | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/NVISOsecurity/cyber-security-llm-agents)                                                       |
 | **E-commerce Personal Shopper Agent** | E-commerce       | Helps customers find products they’ll love.             | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/Hoanganhvu123/ShoppingGPT)                                                                     |
 | **Logistics Optimization Agent**      | Supply Chain     | Plans efficient delivery routes and manages inventory.   | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/microsoft/OptiGuide)                                                                           |
+| **Vibe Hacking Agent**                | Cybersecurity    | Autonomous Multi-Agent Based Red Team Testing Service.   | [![GitHub](https://img.shields.io/badge/Code-GitHub-black?logo=github)]
+(https://github.com/PurpleAILAB/Decepticon)
 
 ## Framework wise Usecases
 
@@ -290,6 +292,7 @@ Whether you're a developer, researcher, or business enthusiast, this repository 
 | 🧠 **Corrective RAG (Local)** | 🧠 AI / Information Retrieval | This tutorial focuses on building a Corrective RAG system using local resources, allowing for offline document evaluation and refinement processes.                                                                                                | [![AI Agent Code - Python](https://img.shields.io/static/v1?label=AI+Agent+Code&message=Python&color=%23244cd1)](https://github.com/langchain-ai/langgraph/blob/main/docs/docs/tutorials/rag/langgraph_crag_local.ipynb)       |
 | 🧠 **Self-RAG**               | 🧠 AI / Information Retrieval | Learn to implement Self-RAG, where the system reflects on its responses and retrieves additional information if necessary, enhancing the accuracy and relevance of generated content.                                                              | [![AI Agent Code - Python](https://img.shields.io/static/v1?label=AI+Agent+Code&message=Python&color=%23244cd1)](https://github.com/langchain-ai/langgraph/blob/main/docs/docs/tutorials/rag/langgraph_self_rag.ipynb)                       |
 | 🧠 **Self-RAG (Local)**       | 🧠 AI / Information Retrieval | This tutorial demonstrates how to implement Self-RAG using local models and data sources, enabling offline reflection and retrieval processes.                                                                                                     | [![AI Agent Code - Python](https://img.shields.io/static/v1?label=AI+Agent+Code&message=Python&color=%23244cd1)](https://github.com/langchain-ai/langgraph/blob/main/docs/docs/tutorials/rag/langgraph_self_rag_local.ipynb)         |
+
 
 
 
