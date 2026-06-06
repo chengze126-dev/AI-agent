@@ -25,6 +25,9 @@ python agent.py --db path/to/your/database.sqlite
 python agent.py --question "What is the total revenue by country?"
 ```
 
+Databases open in read-only mode by default. Use `--allow-write` only with a disposable database
+if you intentionally want the generated SQL agent to be able to mutate data.
+
 ## Example Questions
 
 - "How many customers do we have in each country?"

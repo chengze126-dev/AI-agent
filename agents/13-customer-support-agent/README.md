@@ -16,6 +16,9 @@ cp .env.example .env
 
 ```bash
 python agent.py
+
+# Use your own .txt/.md knowledge base files
+python agent.py --kb-dir docs/
 ```
 
 ## Features

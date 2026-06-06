@@ -11,6 +11,7 @@ Usage:
 
 import argparse
 import os
+from pathlib import Path
 from typing import Annotated, Literal, TypedDict
 
 from dotenv import load_dotenv
@@ -48,7 +49,7 @@ class SupportState(TypedDict):
 def retrieve_context(state: SupportState) -> SupportState:
     query = state["user_input"]
     if not hasattr(retrieve_context, "vectorstore"):
-        texts = SAMPLE_KB
+        texts = getattr(retrieve_context, "kb_texts", SAMPLE_KB)
         splitter = RecursiveCharacterTextSplitter(chunk_size=200, chunk_overlap=20)
         docs_split = splitter.create_documents(texts)
         embeddings = OpenAIEmbeddings()
@@ -103,9 +104,33 @@ def build_graph():
     return graph.compile()
 
 
+def load_kb_texts(kb_dir: str | None) -> list[str]:
+    if not kb_dir:
+        return SAMPLE_KB
+
+    root = Path(kb_dir)
+    if not root.is_dir():
+        raise ValueError(f"Knowledge base directory does not exist: {kb_dir}")
+
+    texts = []
+    for path in sorted(root.rglob("*")):
+        if path.is_file() and path.suffix.lower() in {".txt", ".md"}:
+            texts.append(path.read_text(encoding="utf-8"))
+
+    if not texts:
+        raise ValueError(f"No .txt or .md files found in knowledge base directory: {kb_dir}")
+
+    return texts
+
+
 def main():
     parser = argparse.ArgumentParser(description="Customer Support Agent")
+    parser.add_argument("--kb-dir", help="Directory containing .txt or .md support knowledge base files")
     args = parser.parse_args()
+
+    retrieve_context.kb_texts = load_kb_texts(args.kb_dir)
+    if hasattr(retrieve_context, "vectorstore"):
+        delattr(retrieve_context, "vectorstore")
 
     agent = build_graph()
     state = {"messages": [], "user_input": "", "retrieved_context": "", "response": "", "escalate": False}

@@ -16,14 +16,19 @@ cp .env.example .env
 
 ```bash
 # Demo mode — creates sample sales data automatically
-python agent.py
+python agent.py --allow-dangerous-code
 
 # Your own data
-python agent.py --file your_data.csv
+python agent.py --file your_data.csv --allow-dangerous-code
 
 # Single question
-python agent.py --file sales.csv --question "What is the monthly revenue trend?"
+python agent.py --file sales.csv --question "What is the monthly revenue trend?" --allow-dangerous-code
 ```
+
+## Safety Note
+
+This demo uses LangChain's pandas agent, which executes model-generated Python code.
+Use `--allow-dangerous-code` only with trusted prompts and non-sensitive local data.
 
 ## Example Questions
 

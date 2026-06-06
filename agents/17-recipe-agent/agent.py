@@ -12,6 +12,7 @@ Usage:
 import argparse
 import json
 import os
+import re
 
 from dotenv import load_dotenv
 from langchain_core.messages import HumanMessage, SystemMessage
@@ -42,6 +43,17 @@ suggest 3 recipes. Return JSON:
 Return only valid JSON."""
 
 
+def parse_json_response(text: str) -> dict:
+    cleaned = text.strip()
+    if cleaned.startswith("```"):
+        cleaned = re.sub(r"^```(?:json)?\s*", "", cleaned)
+        cleaned = re.sub(r"\s*```$", "", cleaned)
+    match = re.search(r"\{.*\}", cleaned, re.DOTALL)
+    if match:
+        cleaned = match.group(0)
+    return json.loads(cleaned)
+
+
 def get_recipes(ingredients: list[str], diet: str, time_limit: int, servings: int) -> dict:
     llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.5)
 
@@ -59,20 +71,20 @@ def get_recipes(ingredients: list[str], diet: str, time_limit: int, servings: in
     ]
 
     response = llm.invoke(messages)
-    return json.loads(response.content)
+    return parse_json_response(response.content)
 
 
 def display_recipe(recipe: dict):
-    print(f"\n🍽️  {recipe['name']} ({recipe['cuisine']})")
-    print(f"⏱️  Prep: {recipe['prep_time']} | Cook: {recipe['cook_time']} | Difficulty: {recipe['difficulty']}")
-    print(f"👥 Serves: {recipe['servings']}")
+    print(f"\n🍽️  {recipe.get('name', 'Recipe')} ({recipe.get('cuisine', 'N/A')})")
+    print(f"⏱️  Prep: {recipe.get('prep_time', 'N/A')} | Cook: {recipe.get('cook_time', 'N/A')} | Difficulty: {recipe.get('difficulty', 'N/A')}")
+    print(f"👥 Serves: {recipe.get('servings', 'N/A')}")
     print(f"\n📝 Ingredients:")
-    for ing in recipe["ingredients_needed"]:
+    for ing in recipe.get("ingredients_needed", []):
         print(f"  • {ing}")
     if recipe.get("missing_ingredients"):
         print(f"\n➕ Optional additions: {', '.join(recipe['missing_ingredients'])}")
     print(f"\n👨‍🍳 Instructions:")
-    for i, step in enumerate(recipe["instructions"], 1):
+    for i, step in enumerate(recipe.get("instructions", []), 1):
         print(f"  {i}. {step}")
     n = recipe.get("nutrition_per_serving", {})
     if n:
@@ -99,10 +111,12 @@ def main():
     result = get_recipes(ingredients, args.diet, args.time, args.servings)
 
     print("\n" + "=" * 60)
-    print("✅ RECOMMENDED:", result.get("recommended", result["recipes"][0]["name"]))
+    recipes = result.get("recipes", [])
+    recommended = result.get("recommended") or (recipes[0].get("name", "N/A") if recipes else "N/A")
+    print("✅ RECOMMENDED:", recommended)
     print("=" * 60)
 
-    for recipe in result["recipes"]:
+    for recipe in recipes:
         display_recipe(recipe)
         print("\n" + "-" * 40)
 

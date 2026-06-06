@@ -13,6 +13,7 @@ Usage:
 import argparse
 import json
 import os
+import re
 
 from dotenv import load_dotenv
 from langchain_core.messages import HumanMessage, SystemMessage
@@ -56,6 +57,17 @@ FIT_PROMPT = """Given this candidate profile and job description, return JSON:
 Return only valid JSON."""
 
 
+def parse_json_response(text: str) -> dict:
+    cleaned = text.strip()
+    if cleaned.startswith("```"):
+        cleaned = re.sub(r"^```(?:json)?\s*", "", cleaned)
+        cleaned = re.sub(r"\s*```$", "", cleaned)
+    match = re.search(r"\{.*\}", cleaned, re.DOTALL)
+    if match:
+        cleaned = match.group(0)
+    return json.loads(cleaned)
+
+
 def read_resume_text(path: str) -> str:
     if path.endswith(".pdf"):
         try:
@@ -74,7 +86,7 @@ def parse_resume(text: str) -> dict:
     llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
     messages = [SystemMessage(content=PARSE_PROMPT), HumanMessage(content=text)]
     response = llm.invoke(messages)
-    return json.loads(response.content)
+    return parse_json_response(response.content)
 
 
 def score_fit(profile: dict, job_desc: str) -> dict:
@@ -84,7 +96,7 @@ def score_fit(profile: dict, job_desc: str) -> dict:
         HumanMessage(content=f"Candidate profile:\n{json.dumps(profile, indent=2)}\n\nJob description:\n{job_desc}"),
     ]
     response = llm.invoke(messages)
-    return json.loads(response.content)
+    return parse_json_response(response.content)
 
 
 SAMPLE_RESUME = """
@@ -149,12 +161,13 @@ def main():
         print("📊 JOB FIT ANALYSIS")
         print("=" * 60)
         fit = score_fit(profile, args.job_desc)
-        label_emoji = {"Excellent": "🟢", "Good": "🟡", "Fair": "🟠", "Poor": "🔴"}.get(fit["fit_label"], "⚪")
-        print(f"{label_emoji} Fit Score: {fit['fit_score']}/100 ({fit['fit_label']})")
-        print(f"✅ Strengths: {', '.join(fit['strengths'][:3])}")
+        fit_label = fit.get("fit_label", "N/A")
+        label_emoji = {"Excellent": "🟢", "Good": "🟡", "Fair": "🟠", "Poor": "🔴"}.get(fit_label, "⚪")
+        print(f"{label_emoji} Fit Score: {fit.get('fit_score', 'N/A')}/100 ({fit_label})")
+        print(f"✅ Strengths: {', '.join(fit.get('strengths', [])[:3])}")
         print(f"⚠️  Gaps: {', '.join(fit.get('gaps', ['None identified'])[:3])}")
-        print(f"🎯 Recommendation: {fit['recommendation']}")
-        print(f"💭 {fit['recommendation_reason']}")
+        print(f"🎯 Recommendation: {fit.get('recommendation', 'N/A')}")
+        print(f"💭 {fit.get('recommendation_reason', 'N/A')}")
 
 
 if __name__ == "__main__":

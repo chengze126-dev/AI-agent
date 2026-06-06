@@ -52,6 +52,11 @@ def main():
     parser = argparse.ArgumentParser(description="Data Analysis Agent")
     parser.add_argument("--file", default="sample_data.csv", help="CSV or Excel file to analyze")
     parser.add_argument("--question", help="Single question (omit for interactive mode)")
+    parser.add_argument(
+        "--allow-dangerous-code",
+        action="store_true",
+        help="Required to let the pandas agent execute generated Python code locally",
+    )
     args = parser.parse_args()
 
     if args.file == "sample_data.csv" and not os.path.exists("sample_data.csv"):
@@ -64,12 +69,17 @@ def main():
     print(f"\n📊 Loaded: {args.file} ({len(df)} rows × {len(df.columns)} columns)")
     print(f"📋 Columns: {', '.join(df.columns)}\n")
 
+    if not args.allow_dangerous_code:
+        print("⚠️  This agent uses LangChain's pandas agent, which executes model-generated Python code.")
+        print("Run again with --allow-dangerous-code only with trusted prompts and non-sensitive data.")
+        return
+
     llm = ChatOpenAI(model="gpt-4o", temperature=0)
     agent = create_pandas_dataframe_agent(
         llm,
         df,
         verbose=False,
-        allow_dangerous_code=True,
+        allow_dangerous_code=args.allow_dangerous_code,
     )
 
     if args.question:

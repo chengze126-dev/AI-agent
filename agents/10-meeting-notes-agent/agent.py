@@ -12,7 +12,8 @@ Usage:
 import argparse
 import json
 import os
-from datetime import date
+import re
+from datetime import date, datetime
 
 from dotenv import load_dotenv
 from langchain_core.messages import HumanMessage, SystemMessage
@@ -64,6 +65,17 @@ Sarah: Any other blockers? No? Okay. Same time next week, November 10th.
 """
 
 
+def parse_json_response(text: str) -> dict:
+    cleaned = text.strip()
+    if cleaned.startswith("```"):
+        cleaned = re.sub(r"^```(?:json)?\s*", "", cleaned)
+        cleaned = re.sub(r"\s*```$", "", cleaned)
+    match = re.search(r"\{.*\}", cleaned, re.DOTALL)
+    if match:
+        cleaned = match.group(0)
+    return json.loads(cleaned)
+
+
 def generate_meeting_notes(transcript: str) -> dict:
     llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
     messages = [
@@ -71,7 +83,7 @@ def generate_meeting_notes(transcript: str) -> dict:
         HumanMessage(content=f"Meeting transcript:\n\n{transcript}"),
     ]
     response = llm.invoke(messages)
-    return json.loads(response.content)
+    return parse_json_response(response.content)
 
 
 def format_notes(notes: dict) -> str:
@@ -89,7 +101,7 @@ def format_notes(notes: dict) -> str:
         "## Action Items",
     ]
     for item in notes.get("action_items", []):
-        lines.append(f"- [ ] **{item['task']}** — Owner: {item['owner']} | Due: {item['due']}")
+        lines.append(f"- [ ] **{item.get('task', 'Task')}** — Owner: {item.get('owner', 'TBD')} | Due: {item.get('due', 'TBD')}")
 
     if notes.get("blockers"):
         lines += ["", "## Blockers", *[f"- {b}" for b in notes["blockers"]]]
@@ -105,6 +117,7 @@ def main():
     group = parser.add_mutually_exclusive_group()
     group.add_argument("--transcript", help="Path to transcript text file")
     group.add_argument("--text", help="Transcript text directly")
+    parser.add_argument("--output", default="meeting_notes.md", help="Markdown output path")
     args = parser.parse_args()
 
     if args.transcript:
@@ -126,7 +139,10 @@ def main():
     print("=" * 60)
 
     # Save to file
-    output_file = "meeting_notes.md"
+    output_file = args.output
+    if os.path.exists(output_file) and args.output == "meeting_notes.md":
+        stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        output_file = f"meeting_notes_{stamp}.md"
     with open(output_file, "w") as f:
         f.write(formatted)
     print(f"\n✅ Saved to: {output_file}")

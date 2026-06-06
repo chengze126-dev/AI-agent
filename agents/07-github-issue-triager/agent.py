@@ -12,6 +12,7 @@ Usage:
 import argparse
 import os
 import json
+import re
 
 from dotenv import load_dotenv
 from langchain_core.messages import HumanMessage, SystemMessage
@@ -34,6 +35,17 @@ TRIAGE_PROMPT = """You are a GitHub issue triager. Analyze the issue and return 
 Return only valid JSON, no markdown."""
 
 
+def parse_json_response(text: str) -> dict:
+    cleaned = text.strip()
+    if cleaned.startswith("```"):
+        cleaned = re.sub(r"^```(?:json)?\s*", "", cleaned)
+        cleaned = re.sub(r"\s*```$", "", cleaned)
+    match = re.search(r"\{.*\}", cleaned, re.DOTALL)
+    if match:
+        cleaned = match.group(0)
+    return json.loads(cleaned)
+
+
 def triage_issue(title: str, body: str, labels: list[str] = None) -> dict:
     llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
 
@@ -47,7 +59,7 @@ def triage_issue(title: str, body: str, labels: list[str] = None) -> dict:
     ]
 
     response = llm.invoke(messages)
-    return json.loads(response.content)
+    return parse_json_response(response.content)
 
 
 def fetch_github_issue(url: str) -> tuple[str, str, list]:
@@ -88,19 +100,21 @@ def main():
     print(f"\n🏷️  Triaging: {title}\n")
     result = triage_issue(title, body, labels)
 
-    severity_emoji = {"critical": "🔴", "high": "🟠", "medium": "🟡", "low": "🟢"}.get(result["severity"], "⚪")
+    severity = result.get("severity", "medium")
+    labels = result.get("labels", [])
+    severity_emoji = {"critical": "🔴", "high": "🟠", "medium": "🟡", "low": "🟢"}.get(severity, "⚪")
 
     print("=" * 60)
     print("📋 TRIAGE REPORT")
     print("=" * 60)
-    print(f"{severity_emoji} Severity: {result['severity'].upper()} (Priority: {result['priority_score']}/10)")
-    print(f"📁 Category: {result['category']}")
-    print(f"👤 Assignee: {result['assignee_type']} team")
-    print(f"🏷️  Labels: {', '.join(result['labels'])}")
-    print(f"📝 Summary: {result['summary']}")
-    print(f"❓ Needs more info: {'Yes' if result['needs_more_info'] else 'No'}")
-    print(f"🔍 Reproduction clear: {'Yes' if result['reproduction_clear'] else 'No'}")
-    print(f"\n💭 Notes: {result['triage_notes']}")
+    print(f"{severity_emoji} Severity: {severity.upper()} (Priority: {result.get('priority_score', 'N/A')}/10)")
+    print(f"📁 Category: {result.get('category', 'N/A')}")
+    print(f"👤 Assignee: {result.get('assignee_type', 'any')} team")
+    print(f"🏷️  Labels: {', '.join(labels)}")
+    print(f"📝 Summary: {result.get('summary', 'N/A')}")
+    print(f"❓ Needs more info: {'Yes' if result.get('needs_more_info') else 'No'}")
+    print(f"🔍 Reproduction clear: {'Yes' if result.get('reproduction_clear') else 'No'}")
+    print(f"\n💭 Notes: {result.get('triage_notes', 'N/A')}")
 
 
 if __name__ == "__main__":

@@ -3,14 +3,14 @@ Lesson 03: CrewAI + FastMCP Integration
 
 Demonstrates:
 - Building a FastMCP server that exposes tools
-- Connecting CrewAI agents to MCP tools
-- Full production pipeline: MCP server → CrewAI agent → structured output
+- Mirroring MCP server tools as CrewAI BaseTool wrappers
+- Production pattern: keep tool contracts stable between MCP server and CrewAI wrappers
 
 Architecture:
-    MCP Server (tools) ← CrewAI Agent → Output
+    MCP Server tool contracts → CrewAI tool wrappers → Output
 
-Run the MCP server first: python mcp_server.py
-Then run the agent: python agent.py
+Run the agent: python agent.py
+Optional: run python mcp_server.py to inspect the matching FastMCP server tools.
 """
 
 import asyncio
@@ -29,7 +29,8 @@ load_dotenv()
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.2)
 
 
-# Simulated MCP tool wrappers (in production, these connect to the MCP server)
+# CrewAI tool wrappers that mirror the FastMCP server's tool contracts.
+# In production, replace these wrappers with a real MCP client adapter.
 class DateTimeTool(BaseTool):
     name: str = "get_datetime"
     description: str = "Get the current date and time"

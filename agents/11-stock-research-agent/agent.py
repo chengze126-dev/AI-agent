@@ -6,7 +6,7 @@ analyst ratings, and AI-powered investment summary.
 
 Usage:
     python agent.py --ticker AAPL
-    python agent.py --ticker NVDA --compare MSFT
+    python agent.py --ticker NVDA
 """
 
 import argparse
@@ -96,7 +96,8 @@ def main():
     print(f"Sector: {data.get('sector')}  |  Industry: {data.get('industry')}")
     print(f"P/E: {data.get('pe_ratio')}  |  Forward P/E: {data.get('forward_pe')}  |  PEG: {data.get('peg_ratio')}")
     print(f"52W Range: ${data.get('52w_low')} - ${data.get('52w_high')}")
-    print(f"Analyst: {data.get('analyst_rating', 'N/A').upper()}  |  Target: ${data.get('target_price', 'N/A')}")
+    analyst_rating = data.get("analyst_rating") or "N/A"
+    print(f"Analyst: {str(analyst_rating).upper()}  |  Target: ${data.get('target_price', 'N/A')}")
 
     print("\n🤖 AI Analysis:")
     print("-" * 40)

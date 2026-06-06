@@ -13,6 +13,7 @@ Usage:
 import argparse
 import os
 import sqlite3
+from urllib.parse import quote
 
 from dotenv import load_dotenv
 from langchain_community.utilities import SQLDatabase
@@ -73,8 +74,15 @@ def create_demo_database(db_path: str):
     conn.close()
 
 
-def build_agent(db_path: str):
-    db = SQLDatabase.from_uri(f"sqlite:///{db_path}")
+def sqlite_uri(db_path: str, read_only: bool = True) -> str:
+    abs_path = os.path.abspath(db_path)
+    if read_only:
+        return f"sqlite:///file:{quote(abs_path)}?mode=ro&uri=true"
+    return f"sqlite:///{abs_path}"
+
+
+def build_agent(db_path: str, read_only: bool = True):
+    db = SQLDatabase.from_uri(sqlite_uri(db_path, read_only=read_only))
     llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
     toolkit = SQLDatabaseToolkit(db=db, llm=llm)
     agent = create_sql_agent(
@@ -90,14 +98,16 @@ def main():
     parser = argparse.ArgumentParser(description="SQL Query Agent")
     parser.add_argument("--db", default="demo.sqlite", help="SQLite database path")
     parser.add_argument("--question", help="Natural language question (omit for interactive)")
+    parser.add_argument("--allow-write", action="store_true", help="Open the SQLite database read-write instead of read-only")
     args = parser.parse_args()
 
     if args.db == "demo.sqlite" and not os.path.exists("demo.sqlite"):
         print("🏗️  Creating demo e-commerce database...")
         create_demo_database("demo.sqlite")
 
-    agent, db = build_agent(args.db)
+    agent, db = build_agent(args.db, read_only=not args.allow_write)
     print(f"\n📊 Connected to: {args.db}")
+    print(f"🔒 Mode: {'read-write' if args.allow_write else 'read-only'}")
     print(f"📋 Tables: {', '.join(db.get_table_names())}\n")
 
     if args.question:

@@ -23,11 +23,15 @@ python agent.py --transcript meeting_transcript.txt
 
 # Inline text
 python agent.py --text "Alice: Let's ship by Friday. Bob: I need 2 more days for testing..."
+
+# Custom output path
+python agent.py --transcript meeting_transcript.txt --output sprint_notes.md
 ```
 
 ## Output
 
-Saves structured markdown to `meeting_notes.md` with:
+Saves structured markdown to `meeting_notes.md` by default. If that file already exists,
+the agent writes a timestamped file instead. The output includes:
 - Executive summary
 - Key decisions
 - Action items with owners and due dates

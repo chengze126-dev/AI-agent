@@ -32,7 +32,13 @@ class ResearchState(TypedDict):
 
 def search_web(state: ResearchState) -> ResearchState:
     tool = TavilySearch(max_results=5)
-    results = tool.invoke(state["query"])
+    raw_results = tool.invoke(state["query"])
+    if isinstance(raw_results, dict):
+        results = raw_results.get("results", [])
+    elif isinstance(raw_results, list):
+        results = raw_results
+    else:
+        results = []
     return {"search_results": results}
 
 

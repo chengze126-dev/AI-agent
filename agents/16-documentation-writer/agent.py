@@ -103,7 +103,7 @@ def add_docstrings(code: str, filename: str) -> str:
     return result
 
 
-SAMPLE_CODE = '''
+SAMPLE_CODE = r'''
 import hashlib
 import re
 from datetime import datetime
