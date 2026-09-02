@@ -33,6 +33,7 @@ A curated collection of **500+ AI agent projects** — production examples, tuto
 
 ---
 
+<!-- Pull Shark achievement test -->
 ## ⚡ Quick Start
 
 Pick a framework and run an agent in under 5 minutes:
