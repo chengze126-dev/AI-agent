@@ -11,24 +11,24 @@
 </style>
 <rect width="800" height="400" class="bg"/>
 <line x1="70" y1="350.0" x2="770" y2="350.0" class="grid"/>
-<line x1="70" y1="350.0" x2="770" y2="350.0" class="grid"/>
-<line x1="70" y1="350.0" x2="770" y2="350.0" class="grid"/>
+<line x1="70" y1="286.0" x2="770" y2="286.0" class="grid"/>
+<line x1="70" y1="222.0" x2="770" y2="222.0" class="grid"/>
+<line x1="70" y1="158.0" x2="770" y2="158.0" class="grid"/>
+<line x1="70" y1="94.0" x2="770" y2="94.0" class="grid"/>
 <line x1="70" y1="30.0" x2="770" y2="30.0" class="grid"/>
-<line x1="70" y1="30.0" x2="770" y2="30.0" class="grid"/>
-<line x1="70" y1="30.0" x2="770" y2="30.0" class="grid"/>
-<polygon points="70,350 70.0,30.0 70.0,350" class="ar"/>
-<polyline points="70.0,30.0" class="ln"/>
+<polygon points="70,350 70.0,286.0 768.6,222.0 770.0,158.0 770.0,350" class="ar"/>
+<polyline points="70.0,286.0 768.6,222.0 770.0,158.0" class="ln"/>
 <text x="60" y="354.0" class="lbl" text-anchor="end">0</text>
-<text x="60" y="354.0" class="lbl" text-anchor="end">0</text>
-<text x="60" y="354.0" class="lbl" text-anchor="end">0</text>
-<text x="60" y="34.0" class="lbl" text-anchor="end">1</text>
-<text x="60" y="34.0" class="lbl" text-anchor="end">1</text>
-<text x="60" y="34.0" class="lbl" text-anchor="end">1</text>
+<text x="60" y="290.0" class="lbl" text-anchor="end">1</text>
+<text x="60" y="226.0" class="lbl" text-anchor="end">2</text>
+<text x="60" y="162.0" class="lbl" text-anchor="end">3</text>
+<text x="60" y="98.0" class="lbl" text-anchor="end">4</text>
+<text x="60" y="34.0" class="lbl" text-anchor="end">5</text>
 <text x="70.0" y="372" class="lbl" text-anchor="middle">Aug 2026</text>
-<text x="70.0" y="372" class="lbl" text-anchor="middle">Aug 2026</text>
-<text x="70.0" y="372" class="lbl" text-anchor="middle">Aug 2026</text>
-<text x="70.0" y="372" class="lbl" text-anchor="middle">Aug 2026</text>
-<text x="70.0" y="372" class="lbl" text-anchor="middle">Aug 2026</text>
-<text x="70" y="20" class="ttl">chengze126-dev/AI-agent &#183; 1 stars</text>
-<text x="770" y="20" class="lbl" text-anchor="end">updated 28 Sep 2026</text>
+<text x="245.0" y="372" class="lbl" text-anchor="middle">Aug 2026</text>
+<text x="420.0" y="372" class="lbl" text-anchor="middle">Sep 2026</text>
+<text x="595.0" y="372" class="lbl" text-anchor="middle">Sep 2026</text>
+<text x="770.0" y="372" class="lbl" text-anchor="middle">Sep 2026</text>
+<text x="70" y="20" class="ttl">chengze126-dev/AI-agent &#183; 3 stars</text>
+<text x="770" y="20" class="lbl" text-anchor="end">updated 5 Oct 2026</text>
 </svg>
